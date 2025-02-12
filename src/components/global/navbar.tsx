@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/nextjs";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -51,6 +52,7 @@ export default async function Navbar(props: INavbarProps) {
           </span>
         </Link>
         {/* {user ? <UserButton afterSignOutUrl="/" /> : null} */}
+        <UserButton />
         <MenuIcon className="md:hidden" />
       </aside>
     </header>
